@@ -1,0 +1,36 @@
+/* Exercise task
+You will find following structure in the exercise:
+
+using System;
+
+namespace Exercise005
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            string name = "Ada LoveLace";
+            // Write your code here:           
+        }
+    }
+}
+
+Modify the code, so that it prints Hello Ada LoveLace! Do not modify the variable content! */
+
+// Exercise answer
+
+namespace Exercise005
+{
+  using System;
+
+
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string name = "Ada LoveLace";
+            Console.WriteLine("Hello " + name + "!");
+        }
+    }
+
+}
