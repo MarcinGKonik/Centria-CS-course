@@ -1,0 +1,32 @@
+/* Exercise task
+The exercise has following structure:
+
+using System;
+ 
+namespace Exercise004
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string message = "Passport and floss!";
+            Console.WriteLine(message);
+        }
+    }
+}
+
+Change it, so that it prints Passport and a toothbrush! Do not change the line containing Console.WriteLine, only change the content of the variable! */
+
+//Exercise solution
+
+namespace Exercise004
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            string message = "Passport and a toothbrush!"; 
+            Console.WriteLine(message);        }
+    }
+}
