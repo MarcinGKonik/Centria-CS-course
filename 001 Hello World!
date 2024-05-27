@@ -1,0 +1,31 @@
+/* Exercise's Task
+The basic structure of a program is given in the exercise:
+
+using System;
+
+namespace Exercise001
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Add your code here:
+            
+        }
+    }
+}
+
+The line \\Add your code here: is a comment. The composer does not compose it, so you do not have to worry about it. You can remove it, if you want.
+
+Create a program that writes the text Hello World! into the console. The program contains the basic structure pictured above. */
+
+//Exercise solution
+
+namespace Exercise001{
+public class Program {
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
+}
