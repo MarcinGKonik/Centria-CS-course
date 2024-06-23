@@ -1,0 +1,27 @@
+/* Exercise Description 
+
+Create a program which asks the user for an integer. After user input, the program will print the integer. Example prints:
+
+Give a number!
+> 11
+You gave 11
+
+Give a number!
+> 42
+You gave 42 */
+
+//Exercise solution
+
+namespace Exercise012
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      Console.WriteLine("Give a number!"); // Corrected the typo in WriteLine
+      int number = int.Parse(Console.ReadLine()); // Convert the input string to an integer
+      Console.WriteLine("You gave " + number);
+    }
+  }
+}
