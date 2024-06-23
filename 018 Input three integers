@@ -1,0 +1,36 @@
+/* Exercise description 
+
+Expand a little on the previous exercise. Now create a program, which asks for three integers, and calculates their sum.
+
+Give the first number!
+> 3
+Give the second number!
+> -1
+Give the third number!
+> 2
+The sum is 4 */
+
+//Ecercise solution
+
+namespace Exercise018
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give the first number!");
+            int firstNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Give the second number!");
+            int secondNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Give the third number!");
+            int thirdNumber = int.Parse(Console.ReadLine());
+
+            int sum = firstNumber + secondNumber + thirdNumber;
+
+            Console.WriteLine("The sum is " + sum);
+        }
+    }
+}
