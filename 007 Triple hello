@@ -1,0 +1,28 @@
+/* exercise description
+
+Create a program, that asks user for a string. After the user has given the string (written text and pressed enter), the program will print the given line 3 times. Example output with Hello as input:
+
+Give input!
+> Hello
+Hello
+Hello
+Hello */
+
+// Exercise solution
+
+namespace Exercise007
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give input!");
+            string malpa = Console.ReadLine();
+            Console.WriteLine(malpa);
+            Console.WriteLine(malpa);
+            Console.WriteLine(malpa);
+
+        }
+    }
+}
