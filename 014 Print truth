@@ -1,0 +1,28 @@
+/* Exercise description 
+
+Create a program, that asks the user for a boolean. After user input, the program will print the boolean. Example prints:
+
+Give me the truth!
+> tRuE
+True
+
+Give me the truth!
+> false
+False  */
+
+// Exercise solution
+
+namespace Exercise014
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give me the truth!");
+            string malpa = Console.ReadLine();
+            bool one = Convert.ToBoolean(malpa);
+            Console.WriteLine(one);
+        }
+    }
+}
