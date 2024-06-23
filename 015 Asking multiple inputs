@@ -1,0 +1,45 @@
+/* Exercise description
+
+Let's combine everything you know so far. create program that asks the user for a string, an integer, a double and a boolean, and prints them like follows:
+
+Give a string:
+> This is a masterpiece!
+Give an integer:
+> 42
+Give a double:
+> 3.1415
+Give a boolean:
+> True
+Your string: This is a masterpiece!
+Your integer: 42
+Your double: 3.1415
+Your boolean: True  */
+
+// Exercise solution
+
+namespace Exercise015
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give a string:");
+            string one = Console.ReadLine();
+            
+            Console.WriteLine("Give an integer:");
+            int two = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine("Give a double:");
+            double three = Convert.ToDouble(Console.ReadLine());
+            
+            Console.WriteLine("Give a boolean:");
+            bool four = Convert.ToBoolean(Console.ReadLine());
+            
+            Console.WriteLine("Your string: " + one);
+            Console.WriteLine("Your integer: " + two);
+            Console.WriteLine("Your double: " + three);
+            Console.WriteLine("Your boolean: " + four);
+        }
+    }
+}
