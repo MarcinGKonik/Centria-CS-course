@@ -1,0 +1,36 @@
+/* Exercise description
+
+Create a program which asks for a string. If the string is "Mellon", print "Welcome, friend", otherwise print "They've got a cave troll!"
+
+Speak, friend, and enter!
+> Let meeeee in!
+They've got a cave troll!
+
+Speak, friend, and enter!
+> Mellon
+Welcome, friend   */
+
+// Solution
+
+namespace Exercise032
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Speak, friend, and enter!");
+            string input = Console.ReadLine();
+
+            // Check if the input is "Mellon"
+            if (input == "Mellon")
+            {
+                Console.WriteLine("Welcome, friend");
+            }
+            else
+            {
+                Console.WriteLine("They've got a cave troll!");
+            }
+        }
+    }
+}
