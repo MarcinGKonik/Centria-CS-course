@@ -1,0 +1,30 @@
+/* Exercise description
+
+Create a program which asks for an integer. If the integer is 1984, output "Orwell".
+
+Give a number:
+>1985
+
+Give a number:
+> 1984
+Orwell   */
+
+//Solution
+
+namespace Exercise025
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give a number:");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            if (number == 1984)
+            {
+                Console.WriteLine("Orwell");
+            }
+        }
+    }
+}
