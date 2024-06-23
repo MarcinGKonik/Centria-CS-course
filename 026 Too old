@@ -1,0 +1,30 @@
+/* Exercise description
+
+Create a program which asks for an integer. If the integer is less than 1900, output "You're old".
+
+Give your year of birth:
+>1985
+
+Give your year of birth:
+> 1899
+You're old   */
+
+// Solution
+
+namespace Exercise026
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give your year of birth:");
+            int yearOfBirth = Convert.ToInt32(Console.ReadLine());
+
+            if (yearOfBirth < 1900)
+            {
+                Console.WriteLine("You're old");
+            }
+        }
+    }
+}
