@@ -1,0 +1,48 @@
+/* Excercise description
+
+Create a program, which asks the user for integers. If the number is zero, exit the program. If the number is negative, give the user message "That is negative". If the number is positive, output the number, raised to its second power (the number multiplied with itself).
+
+Give a number:
+> 5
+25
+Give a number:
+> -2
+That is negative
+Give a number:
+> 4
+16
+Give a number:
+0   */
+
+// Solution
+
+namespace Exercise038
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int negativeCount = 0; // Initialize a counter for the negative numbers.
+
+            while (true) // Start an infinite loop to continuously ask for user input.
+            {
+                Console.WriteLine("Give a number:");
+                int number = int.Parse(Console.ReadLine()); // Read and convert the user input to an integer.
+
+                if (number == 0) // Check if the input is 0.
+                {
+                    break; // Exit the loop if the input is 0.
+                }
+
+                if (number < 0) // Check if the number is negative.
+                {
+                    negativeCount++; // Increment the negative counter for every negative input.
+                }
+            }
+
+            // After exiting the loop, print the total count of negative numbers inputted.
+            Console.WriteLine("Total amount of negative numbers: " + negativeCount);
+        }
+    }
+}
