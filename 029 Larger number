@@ -1,0 +1,52 @@
+/* Exercise description
+
+Create a program which asks for two integers. The program should tell which of them is greater. If they are equal, that should be noted, too.
+
+Give the first number!
+> 3
+Give the second number!
+> 2
+The larger number is 3!
+
+Give the first number!
+> 3
+Give the second number!
+> 4
+The larger number is 4!
+
+Give the first number!
+> 3
+Give the second number!
+> 3
+They are equal!    */
+
+// Solution
+
+namespace Exercise029
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give the first number!");
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Give the second number!");
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
+
+            if (firstNumber > secondNumber)
+            {
+                Console.WriteLine($"The larger number is {firstNumber}!");
+            }
+            else if (secondNumber > firstNumber)
+            {
+                Console.WriteLine($"The larger number is {secondNumber}!");
+            }
+            else
+            {
+                Console.WriteLine("They are equal!");
+            }
+        }
+    }
+}
