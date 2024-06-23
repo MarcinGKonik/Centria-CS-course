@@ -1,0 +1,36 @@
+/* Exercise description
+
+Create a program, which asks the user for three integers and calculates their average as a double.
+
+Give the first number!
+> 3
+Give the second number!
+> 2
+Give the third number!
+> 1
+The average is 2.0   */
+
+//Solution
+
+namespace Exercise022
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give the first number!");
+            int firstNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Give the second number!");
+            int secondNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Give the third number!");
+            int thirdNumber = int.Parse(Console.ReadLine());
+
+            double average = (firstNumber + secondNumber + thirdNumber) / 3.0;
+
+            Console.WriteLine("The average is " + average);
+        }
+    }
+}
