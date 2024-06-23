@@ -1,0 +1,44 @@
+/* Exercise descriptions
+
+Create a program which asks for two string. If the strings are equal, print "Echo!", otherwise print "Nope!".
+
+Give the first string:
+> Potato
+Give the second string:
+> Potato
+Echo!
+
+Give the first string:
+> Potato
+Give the second string:
+> Tomato
+Nope!
+ */
+
+// solution
+
+namespace Exercise033
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give the first string:");
+            string firstString = Console.ReadLine();
+
+            Console.WriteLine("Give the second string:");
+            string secondString = Console.ReadLine();
+
+            // Check if the strings are equal
+            if (firstString == secondString)
+            {
+                Console.WriteLine("Echo!");
+            }
+            else
+            {
+                Console.WriteLine("Nope!");
+            }
+        }
+    }
+}
