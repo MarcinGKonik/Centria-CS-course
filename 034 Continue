@@ -1,0 +1,34 @@
+/* Exercise description
+
+Create a program which asks the user if they want to continue. If the user answers "no", then quit the program. Otherwise, ask again.
+Note!
+Use a while-loop!
+
+Do you want to continue?
+> Yes
+Do you want to continue?
+> Hot potato
+Do you want to continue?
+> no  */
+
+// Solution
+
+namespace Exercise034
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Initialize the response with a non-"no" value
+            string response = "";
+
+            // Use a while loop to keep asking until "no" is the response
+            while (response.ToLower() != "no")
+            {
+                Console.WriteLine("Do you want to continue?");
+                response = Console.ReadLine();
+            }
+        }
+    }
+}
