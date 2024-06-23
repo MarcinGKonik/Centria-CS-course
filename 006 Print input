@@ -1,0 +1,24 @@
+/* Exercise description
+
+Create a program, that asks user for a string. After the user has given the string (written text and pressed enter), the program will print the given line. Example output with Hello as input (input marked with > for clarification):
+
+Give input!
+> Hello
+Hello */
+
+//Excercise solution
+
+using System;
+
+namespace Exercise006
+{
+    public class Program // Ensure the class name is 'Program' with 'P' capitalized
+    {
+        public static void Main(string[] args) // This 'Main' method signature looks correct
+        {
+            Console.WriteLine("Give input!");
+            string userInput = Console.ReadLine();
+            Console.WriteLine(userInput);
+        }
+    }
+}
