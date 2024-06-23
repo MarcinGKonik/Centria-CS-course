@@ -1,0 +1,35 @@
+/* Exercise description
+
+Create a program, which asks the user for integers, until the user give the number "42".
+
+Give a number:
+> 41
+Give a number:
+> 68
+Give a number:
+-42
+Give a number:
+42   */
+
+// Solution
+
+namespace Exercise035
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            while (true) // Creates an infinite loop
+            {
+                Console.WriteLine("Give a number:");
+                int number = int.Parse(Console.ReadLine()); // Reads user input and converts it to an integer
+
+                if (number == 42) // Checks if the input is 42
+                {
+                    break; // Exits the loop if the input is 42
+                }
+            }
+        }
+    }
+}
