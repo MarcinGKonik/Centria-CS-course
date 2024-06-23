@@ -1,0 +1,23 @@
+/* Exercise Description 
+
+Create a program, that asks user for their name and greets them. Example output with Ada as input:
+
+What is your name?
+> Ada
+Hello Ada! */
+
+// Exercise solution
+
+namespace Exercise008
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine("Hello " + name + "!");
+        }
+    }
+}
