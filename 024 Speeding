@@ -1,0 +1,32 @@
+/* Exercise description
+
+Let's create a program, which asks the user for an integer.
+
+If the given integer is larger than 120, output "Speeding!".
+
+Your speed:
+> 5
+
+Your speed:
+> 125
+Speeding!  */
+
+// Solution
+
+namespace Exercise024
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Your speed:");
+            int speed = Convert.ToInt32(Console.ReadLine());
+
+            if (speed > 120)
+            {
+                Console.WriteLine("Speeding!");
+            }
+        }
+    }
+}
