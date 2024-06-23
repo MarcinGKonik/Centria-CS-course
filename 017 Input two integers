@@ -1,0 +1,41 @@
+/* Exercise Description
+
+Create a program, which asks the user for two integers, and calculates their sum.
+
+Remember, that the input is a string, so you have to convert it to integer!
+
+Example output:
+
+Give the first number!
+> 8
+Give the second number!
+> 3
+The sum is 11
+
+Give the first number!
+> 3
+Give the second number!
+> -1
+The sum is 2   */
+
+//Solution
+
+namespace Exercise017
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give the first number!");
+            int firstNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Give the second number!");
+            int secondNumber = int.Parse(Console.ReadLine());
+
+            int sum = firstNumber + secondNumber;
+
+            Console.WriteLine("The sum is " + sum);
+        }
+    }
+}
