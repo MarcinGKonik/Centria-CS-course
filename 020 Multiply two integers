@@ -1,0 +1,37 @@
+/* Exercise description 
+
+Create a program, which asks the user for two integers and multiplies them with each other.
+
+Give the first number!
+> 3
+Give the second number!
+> 2
+3 * 2 = 6
+
+Give the first number!
+> 50
+Give the second number!
+> -2
+50  * -2 = -100   */
+
+// Solution
+
+namespace Exercise020
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Give the first number!");
+            int firstNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Give the second number!");
+            int secondNumber = int.Parse(Console.ReadLine());
+
+            int product = firstNumber * secondNumber;
+
+            Console.WriteLine(firstNumber + " * " + secondNumber + " = " + product);
+        }
+    }
+}
