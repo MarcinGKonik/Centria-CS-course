@@ -1,0 +1,41 @@
+/* Exercise description
+
+Write a program, which reads an integer from the user. Then the program prints numbers from that number to 100. You can assume that the user always gives a number less than 100. Below are some examples of the wanted functionality.
+
+> 99
+99
+100
+
+> -4
+-4
+-3
+-2
+-1
+0
+1
+... (lots of numbers in between) ...
+98
+99
+100   */
+
+// Solution
+namespace Exercise006
+{
+    using System;
+
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Read the integer from user input
+            int startNumber = Convert.ToInt32(Console.ReadLine());
+
+            // Use a for-loop to print numbers from the given number to 100
+            for (int i = startNumber; i <= 100; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+}
+
