@@ -1,0 +1,37 @@
+/* Exercise description
+Write a program which reads an integer from the user. If the number is less than 0, it prints the number multiplied by -1. Otherwise the program prints the number itself. A few examples of the expected function below:
+
+> -3
+3
+
+> 1
+1
+
+> 0
+0
+  */
+
+// Solution
+
+namespace Exercise003
+{
+    using System;
+
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Read an integer from user input
+            int number = Convert.ToInt32(Console.ReadLine());
+            // Check if the number is less than 0
+            if (number < 0)
+            {
+                // Multiply by -1 to get the absolute value
+                number = number * -1;
+            }
+            // Print the absolute value or the number itself
+            Console.WriteLine(number);
+        }
+    }
+}
+
