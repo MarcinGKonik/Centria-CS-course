@@ -1,0 +1,24 @@
+/* Exercise description
+
+Write a method public static int NumberUno() that returns the value 1. */
+
+// Solution
+
+namespace Exercise015
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    { 
+      // Example call to your method and print the returned value
+      Console.WriteLine(NumberUno()); // This should print "1"
+    }
+
+    // Write your method here:
+    public static int NumberUno()
+    {
+      return 1;
+    }
+  }
+}
