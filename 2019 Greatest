@@ -1,0 +1,60 @@
+/* Exercise description
+
+Define a three-parameter method Greatest that returns the greatest of the three numbers passed to it as parameters.
+
+public static int Greatest(int number1, int number2, int number3) 
+{
+  // write your code here
+  // do not print anything inside the method
+
+  // there must be a return command at the end
+}
+
+public static void Main(string[] args) 
+{
+  int answer =  Greatest(2, 7, 3);
+  Console.WriteLine("Greatest: " + answer);
+}
+
+The output of the program:
+
+Greatest: 7  */
+
+// Solution
+
+namespace Exercise019
+{
+    using System;
+    
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Calling the Greatest method with example numbers and printing the result
+            int answer = Greatest(2, 7, 3);
+            Console.WriteLine("Greatest: " + answer);
+        }
+        
+        //Write your method here
+        public static int Greatest(int number1, int number2, int number3)
+        {
+            // Initially assume the first number is the greatest
+            int max = number1;
+            
+            // Compare with the second number
+            if (number2 > max)
+            {
+                max = number2;
+            }
+            
+            // Compare with the third number
+            if (number3 > max)
+            {
+                max = number3;
+            }
+            
+            // Return the greatest number
+            return max;
+        }
+    }
+}
