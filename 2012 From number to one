@@ -1,0 +1,45 @@
+/* Exercise description
+
+Create the following method in the exercise template: public static void PrintFromNumberToOne(int number). It should print the numbers from the number passed as a parameter down to one. Two examples of the method's usage are given below.
+
+public static void Main(string[] args) 
+{
+  PrintFromNumberToOne(5);
+}
+
+5
+4
+3
+2
+1
+
+public static void Main(string[] args) 
+{
+  PrintFromNumberToOne(2);
+}
+
+2
+1  */
+
+// Solution
+
+Create the following method in the exercise template: public static void PrintFromNumberToOne(int number). It should print the numbers from the number passed as a parameter down to one. Two examples of the method's usage are given below.
+
+public static void Main(string[] args) 
+{
+  PrintFromNumberToOne(5);
+}
+
+5
+4
+3
+2
+1
+
+public static void Main(string[] args) 
+{
+  PrintFromNumberToOne(2);
+}
+
+2
+1
