@@ -1,0 +1,23 @@
+/* Exercise description
+
+Write a method public static string Word(). The method must return a string of your choice.  */
+
+namespace Exercise016
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      // Example call to your method
+      string result = Word();
+      Console.WriteLine(result); // This will print the string returned by your Word method.
+    }
+  
+    // Write your method here:
+    public static string Word()
+    {
+      return "Hello, world!"; // You can return any string of your choice
+    }
+  }
+}
