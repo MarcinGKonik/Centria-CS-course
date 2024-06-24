@@ -1,0 +1,51 @@
+/* Exercise description
+
+Write a method public static void DivisibleByThreeInRange(int beginning, int end) that prints all the numbers divisible by three in the given range. The numbers are to be printed in order from the smallest to the greatest.
+
+public static void Main(string[] args) 
+{
+  DivisibleByThreeInRange(3, 6);
+}
+
+3
+6
+
+public static void Main(string[] args) 
+{
+  DivisibleByThreeInRange(2, 10);
+}
+
+3
+6
+9   */
+
+// Solution
+
+namespace Exercise014
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      // Example calls to your method
+      DivisibleByThreeInRange(3, 6); // Should print 3 and 6
+      // Separate examples if desired
+      Console.WriteLine("----");
+      DivisibleByThreeInRange(2, 10); // Should print 3, 6, and 9
+    }
+
+    // Write your method here:
+    public static void DivisibleByThreeInRange(int beginning, int end)
+    {
+      for (int i = beginning; i <= end; i++)
+      {
+        // Check if the current number is divisible by 3
+        if (i % 3 == 0)
+        {
+          Console.WriteLine(i);
+        }
+      }
+    }
+  }
+}
