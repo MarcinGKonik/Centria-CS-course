@@ -1,0 +1,28 @@
+/* Exercise description
+
+Write a method public static void Division(int numerator, int denominator) that prints the result of the division of the numerator by the denominator. Keep in mind that the result of the division of the integers is an integer -- in this case we want the result to be a floating point number (double). */
+
+// Solution
+
+namespace Exercise013
+{
+  using System;
+  public class Program
+  {
+    public static void Main(string[] args)
+    {
+      // Example call to your method
+      Division(10, 3); // Expected to print a floating-point result, e.g., 3.3333333333333335
+      // Another example
+      Division(25, 4); // Expected to print 6.25
+    }
+
+    // Write your method here
+    public static void Division(int numerator, int denominator)
+    {
+      // Cast one of the operands to double to get a floating-point division result
+      double result = (double)numerator / denominator;
+      Console.WriteLine(result);
+    }
+  }
+}
