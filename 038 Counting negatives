@@ -1,0 +1,46 @@
+/* Exercise description
+
+Create a program which asks the user for integers. If the integer is 0, quit. In the end, output the total amount of negative numbers with "Total amount of negative numbers:" and the amount. Do not count the 0 into the amount.
+
+Give a number:
+> 5
+Give a number:
+> -2
+Give a number:
+> 22
+Give a number:
+> 0
+Total amount of negative numbers: 1   */
+
+// Solution
+
+namespace Exercise038
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int negativeCount = 0; // Initialize a counter for the negative numbers.
+
+            while (true) // Start an infinite loop to continuously ask for user input.
+            {
+                Console.WriteLine("Give a number:");
+                int number = int.Parse(Console.ReadLine()); // Read and convert the user input to an integer.
+
+                if (number == 0) // Check if the input is 0.
+                {
+                    break; // Exit the loop if the input is 0.
+                }
+
+                if (number < 0) // Check if the number is negative.
+                {
+                    negativeCount++; // Increment the negative counter for every negative input.
+                }
+            }
+
+            // After exiting the loop, print the total count of negative numbers inputted.
+            Console.WriteLine("Total amount of negative numbers: " + negativeCount);
+        }
+    }
+}
