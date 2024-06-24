@@ -1,0 +1,29 @@
+/* Exercise description
+
+Write a program that reads an integer from the user input, and then prints the second power of the given integer, i.e. the integer multiplied by itself.
+
+> 4
+16
+
+> 5
+25
+
+> -3
+9   */
+
+// Solution
+
+namespace Exercise001
+{
+    using System;
+
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int number = Convert.ToInt32(Console.ReadLine());
+            int squared = number * number;
+            Console.WriteLine(squared);
+        }
+    }
+}
