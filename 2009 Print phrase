@@ -1,0 +1,39 @@
+/* Exercise description
+
+create a method called PrintPhrase which prints the phrase "In a hole in the ground there lived a method" and a newline (use WriteLine and not just Write).
+
+public static void Main(string[] args)
+{
+  // Call your method here:
+  PrintPhrase();
+
+}
+
+// Write your method here:
+public static void PrintPhrase() 
+{
+
+}
+
+In a hole in the ground there lived a method  */
+
+// Solution
+
+namespace Exercise009
+{
+    using System;
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Call your method here:
+            PrintPhrase();
+        }
+
+        // Write your method here:
+        public static void PrintPhrase()
+        {
+            Console.WriteLine("In a hole in the ground there lived a method");
+        }
+    }
+}
