@@ -1,0 +1,46 @@
+/* Exercise description
+Write a program that reads two integers from the user, and prints the square root of the sum of these integers. The program does not need to work with negative values.
+
+You can get the square root of an integer with the command Math.Sqrt like this:
+
+int number = 42;
+double squareRoot = Math.Sqrt(number);
+Console.WriteLine(squareRoot);
+
+> 1 
+> 0 
+1
+
+> 5 
+> 4 
+3
+
+> 1 
+> 35 
+6
+
+*/
+
+// Solution
+
+namespace Exercise002
+{
+    using System;
+
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Read first integer from user input
+            int firstNumber = Convert.ToInt32(Console.ReadLine());
+            // Read second integer from user input
+            int secondNumber = Convert.ToInt32(Console.ReadLine());
+            // Calculate the sum of the two integers
+            int sum = firstNumber + secondNumber;
+            // Calculate the square root of the sum
+            double squareRoot = Math.Sqrt(sum);
+            // Print the square root
+            Console.WriteLine(squareRoot);
+        }
+    }
+}
